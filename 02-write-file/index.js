@@ -5,7 +5,7 @@ const rl = readline.createInterface({
 input: process.stdin,
 output: process.stdout
 });
-const file = path.join(__dirname, './text.txt');
+const file = __dirname + '/text.txt';
 console.log(file);
 
 function init() {
