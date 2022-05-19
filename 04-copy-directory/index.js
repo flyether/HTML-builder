@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 const dir_from = (path.join(__dirname, '/files'));	
 const dir_to = path.join(__dirname, '/files-copy');
 
-function copyDir() { 
+function copyDir(dir_from, dir_to) { 
   (async ()=> {
 
     let status = await fs.stat(dir_from).catch((error)=>{});
@@ -52,4 +52,4 @@ function copyDir() {
 
 
   
-copyDir();
+copyDir(dir_from, dir_to);
