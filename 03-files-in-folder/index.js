@@ -10,7 +10,7 @@ async function processArray(array, dir ) {
       if (err) {
         console.log(err);
       } else if (stats.isDirectory()) {
-        scandir(dirpath);
+        // scandir(dirpath);
       }
       else{
         var fileSizeInBytes = stats.size;
